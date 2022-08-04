@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7433d3320f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hero">
+      <!-- Navbar Section  -->
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="images/moon.png" id="icon" />
+      </nav>
+
+      <!-- Information Section  -->
+      <div class="info">
+        <h1>Refresh <span>Mood</span> on Repeat</h1>
+        <p>
+          Delicious, handcrafted beverages and great-tasting food. The secret to
+          making life better. Two baristas making coffee.
+        </p>
+        <a href="#"><i class="fas fa-caret-right"></i>Order Now</a>
+      </div>
+
+      <!-- Featured Image  -->
+      <div class="img-box">
+        <img src="images/coffee.png" class="main-img" />
+      </div>
+
+      <!-- Social Media Icons  -->
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+      </div>
+    </div>
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "images/sun.png";
+        } else icon.src = "images/moon.png";
+      };
+    </script>
+  </body>
+</html>

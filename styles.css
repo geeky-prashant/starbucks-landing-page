@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #004d30;
+  --secondary-color: #149e69;
+  --background-color: #d9fbee;
+}
+.dark-theme {
+  --primary-color: #149e69;
+  --secondary-color: #fff;
+  --background-color: #000106;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: var(--background-color);
+  position: relative;
+}
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 70px;
+  cursor: pointer;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  padding: 10px;
+}
+nav ul li a:hover {
+  color: var(--primary-color);
+}
+#icon {
+  width: 30px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+.info {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.info h1 {
+  font-size: 50px;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+span {
+  color: var(--primary-color);
+}
+.info p {
+  color: #606163;
+  line-height: 1.5;
+  width: 500px;
+}
+.info a {
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: var(--secondary-color);
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-top: 35px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.info i {
+  margin-right: 8px;
+}
+.info a:hover {
+  background-color: var(--secondary-color);
+  transform: scale(0.9);
+}
+.img-box {
+  width: 45%;
+  height: 75%;
+  position: absolute;
+  bottom: 6%;
+  right: 60px;
+  cursor: pointer;
+}
+.img-box img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.img-box:hover .main-img {
+  left: 55%;
+}
+.social-links {
+  margin-left: 10%;
+  margin-top: 80px;
+  cursor: pointer;
+}
+.social-links a {
+  font-size: 28px;
+  color: var(--secondary-color);
+  margin: 2px;
+}
+.social-links a:hover {
+  color: var(--primary-color);
+}
